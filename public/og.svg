@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0d1311" />
+  <text x="100" y="150" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="74" font-weight="800" fill="#e9f1ed" letter-spacing="-1">Running Pace</text>
+  <text x="100" y="228" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="74" font-weight="800" fill="#e9f1ed" letter-spacing="-1">Calculator</text>
+  <text x="100" y="300" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="30" fill="#93a49d">Pace · finish time · distance · race predictions · splits</text>
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" text-anchor="middle">
+    <text x="300" y="470" font-size="80" font-weight="800" fill="#2fb783">5:00</text>
+    <text x="300" y="515" font-size="24" fill="#93a49d">/ km</text>
+    <text x="620" y="470" font-size="80" font-weight="800" fill="#e9f1ed">25:00</text>
+    <text x="620" y="515" font-size="24" fill="#93a49d">5 km</text>
+    <text x="940" y="470" font-size="80" font-weight="800" fill="#e9f1ed">3:31</text>
+    <text x="940" y="515" font-size="24" fill="#93a49d">marathon</text>
+  </g>
+  <text x="100" y="585" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="24" fill="#d5451b">km or miles · no sign-up · runs in your browser</text>
+</svg>

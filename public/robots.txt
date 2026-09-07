@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://running-pace-calculator.correia95.workers.dev/sitemap.xml

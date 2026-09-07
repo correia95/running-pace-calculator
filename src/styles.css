@@ -1,0 +1,79 @@
+:root {
+  --bg: #f4f6f5;
+  --card: #ffffff;
+  --card-2: #edf1ef;
+  --ink: #182420;
+  --ink-soft: #5b6a64;
+  --line: #dde4e1;
+  --brand: #096b45;
+  --brand-soft: #e0f0e8;
+  --accent: #d5451b;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1311;
+    --card: #161e1b;
+    --card-2: #111917;
+    --ink: #e9f1 ed;
+    --ink: #e9f1ed;
+    --ink-soft: #93a49d;
+    --line: #263230;
+    --brand: #2fb783;
+    --brand-soft: #123027;
+    --accent: #ff7a4d;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.app { max-width: 640px; margin: 0 auto; padding: 26px 15px 60px; }
+header h1 { font-size: clamp(1.5rem, 4.5vw, 2rem); margin: 0 0 6px; letter-spacing: -0.02em; }
+.tag { color: var(--ink-soft); margin: 0 0 20px; font-size: 0.95rem; }
+
+.toolbar { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+.seg { display: inline-flex; background: var(--card-2); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
+.seg button {
+  border: 0; background: transparent; color: var(--ink-soft); font: inherit; font-weight: 600;
+  font-size: 0.86rem; padding: 7px 13px; border-radius: 7px; cursor: pointer;
+}
+.seg button.on { background: var(--card); color: var(--brand); box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+
+.inputs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+@media (max-width: 480px) { .inputs { grid-template-columns: 1fr; } }
+.fld { display: flex; flex-direction: column; gap: 4px; }
+.fld > span { font-size: 0.75rem; font-weight: 600; color: var(--ink-soft); }
+.fld input, .fld select {
+  border: 1px solid var(--line); border-radius: 9px; background: var(--card-2); color: var(--ink);
+  font: inherit; font-size: 1.05rem; font-weight: 600; padding: 10px 11px; outline: none; width: 100%;
+}
+.fld input:focus, .fld select:focus { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+
+.answer { background: var(--card); border: 1px solid var(--line); border-radius: 13px; padding: 18px; text-align: center; margin-bottom: 8px; }
+.big strong { font-size: clamp(2.4rem, 12vw, 3.4rem); font-weight: 800; letter-spacing: -0.03em; color: var(--brand); line-height: 1; display: block; font-variant-numeric: tabular-nums; }
+.big span { font-size: 0.9rem; color: var(--ink-soft); }
+.answer .sub { margin: 10px 0 14px; font-size: 0.9rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.share { width: 100%; border: 0; background: var(--brand); color: #fff; font: inherit; font-weight: 700; padding: 10px; border-radius: 9px; cursor: pointer; }
+.hint { color: var(--ink-soft); text-align: center; padding: 20px; }
+
+h2 { font-size: 1.05rem; margin: 26px 0 6px; letter-spacing: -0.01em; }
+.method { font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 10px; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 11px; }
+table.pred { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+table.pred th, table.pred td { padding: 9px 12px; text-align: right; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+table.pred th:first-child, table.pred td:first-child { text-align: left; }
+table.pred th { background: var(--card-2); color: var(--ink-soft); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; }
+table.pred tbody tr:last-child td { border-bottom: 0; }
+table.pred tr.self { background: var(--brand-soft); font-weight: 700; }
+
+.explainer { margin-top: 40px; border-top: 1px solid var(--line); padding-top: 8px; }
+.explainer h2 { font-size: 1.15rem; }
+.explainer h3 { font-size: 0.98rem; margin: 18px 0 6px; }
+.explainer p { color: var(--ink-soft); font-size: 0.92rem; }
+.explainer footer { margin-top: 26px; text-align: center; font-size: 0.8rem; color: var(--ink-soft); }

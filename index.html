@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#096b45" />
+
+    <title>Running Pace Calculator — pace, finish time, race predictions &amp; splits</title>
+    <meta
+      name="description"
+      content="Calculate your running pace, a finish time, or the distance you covered, in kilometres or miles. Get predicted times for 5K, 10K, half marathon and marathon, plus an even-pace split table. Free and runs in your browser."
+    />
+    <link rel="canonical" href="https://running-pace-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Running Pace Calculator" />
+    <meta property="og:description" content="Pace, finish time or distance — plus race-time predictions and even-pace splits. km or miles." />
+    <meta property="og:url" content="https://running-pace-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://running-pace-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Running Pace Calculator" />
+    <meta name="twitter:description" content="Pace, finish time or distance, plus race predictions and splits." />
+    <meta name="twitter:image" content="https://running-pace-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Running Pace Calculator",
+        "url": "https://running-pace-calculator.correia95.workers.dev/",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Calculate running pace, finish time or distance, with race-time predictions and even-pace splits."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I calculate my running pace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Divide your time by the distance. A 25 minute 5 km is 1500 seconds divided by 5, which is 300 seconds or 5 minutes per kilometre. To find a finish time, multiply your pace by the distance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What pace do I need for a sub-2-hour half marathon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 1:59:59 half marathon over 21.0975 km is about 5:41 per kilometre, or 9:09 per mile. Enter 1:59:00 as the time and Half marathon as the distance to see it, along with the splits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are the race-time predictions worked out?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using Peter Riegel's 1981 formula: predicted time equals your known time times the ratio of the distances to the power 1.06. It is reliable from about 1500 m to the half marathon; marathon predictions from short races tend to be optimistic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I convert pace to speed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pace and speed are reciprocals. 5:00 per kilometre is 12.0 km/h; 6:00 per kilometre is 10.0 km/h. The calculator shows both, in km/h and mph, for any pace you enter."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This running pace calculator needs JavaScript. It converts between pace, finish time and
+        distance in km or miles, and predicts times for 5K, 10K, half marathon and marathon.
+      </p>
+    </noscript>
+  </body>
+</html>
